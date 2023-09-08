@@ -1,0 +1,105 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
+]=]
+
+--GSThank
+
+-- Instances: 9 | Scripts: 1 | Modules: 0
+local G2L = {};
+
+-- StarterGui.GSThank
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[GSThank]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+-- StarterGui.GSThank.Border
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(85, 85, 85);
+G2L["2"]["Size"] = UDim2.new(0, 256, 0, 52);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Position"] = UDim2.new(0.009999999776482582, 0, 0.014999999664723873, 0);
+G2L["2"]["Visible"] = false;
+G2L["2"]["Name"] = [[Border]];
+
+-- StarterGui.GSThank.Border.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+
+
+-- StarterGui.GSThank.Border.ThankMsg
+G2L["4"] = Instance.new("Frame", G2L["2"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["4"]["Size"] = UDim2.new(0, 247, 0, 46);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Position"] = UDim2.new(0.016598232090473175, 0, 0.049378614872694016, 0);
+G2L["4"]["Name"] = [[ThankMsg]];
+
+-- StarterGui.GSThank.Border.ThankMsg.UICorner
+G2L["5"] = Instance.new("UICorner", G2L["4"]);
+
+
+-- StarterGui.GSThank.Border.ThankMsg.Icon
+G2L["6"] = Instance.new("TextLabel", G2L["4"]);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["Size"] = UDim2.new(0, 35, 0, 22);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[✅]];
+G2L["6"]["Name"] = [[Icon]];
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Position"] = UDim2.new(-0.01837851107120514, 0, 0.021739130839705467, 0);
+
+-- StarterGui.GSThank.Border.ThankMsg.Msg
+G2L["7"] = Instance.new("TextLabel", G2L["4"]);
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7"]["TextSize"] = 14;
+G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["Size"] = UDim2.new(0, 241, 0, 22);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Text"] = [[GhostSploit Thanks you for using their executor]];
+G2L["7"]["Name"] = [[Msg]];
+G2L["7"]["BackgroundTransparency"] = 1;
+G2L["7"]["Position"] = UDim2.new(0.0032431413419544697, 0, 0.4282611310482025, 0);
+
+-- StarterGui.GSThank.Border.ThankMsg.Dline1
+G2L["8"] = Instance.new("Frame", G2L["4"]);
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Size"] = UDim2.new(0, 247, 0, 3);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Position"] = UDim2.new(3.0888237745330116e-08, 0, 0.4499989449977875, 0);
+G2L["8"]["Name"] = [[Dline1]];
+
+-- StarterGui.GSThank.Border.LocalScript
+G2L["9"] = Instance.new("LocalScript", G2L["2"]);
+
+
+-- StarterGui.GSThank.Border.LocalScript
+local function C_9()
+local script = G2L["9"];
+	this = script.Parent
+	
+	this.Visible = true
+	
+	wait(0.5)
+	
+	print("Destroying thank message")
+	
+	wait(2.5)
+	
+	this:Destroy()
+end;
+task.spawn(C_9);
+
+return G2L["1"], require;
