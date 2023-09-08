@@ -23,7 +23,7 @@ G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(85, 85, 85);
 G2L["2"]["Size"] = UDim2.new(0, 256, 0, 52);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2"]["Position"] = UDim2.new(0.009999999776482582, 0, 0.014999999664723873, 0);
+G2L["2"]["Position"] = UDim2.new(0.016993002966046333, 0, 0.022702179849147797, 0);
 G2L["2"]["Visible"] = false;
 G2L["2"]["Name"] = [[Border]];
 
@@ -67,7 +67,7 @@ G2L["7"]["TextSize"] = 14;
 G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["7"]["Size"] = UDim2.new(0, 241, 0, 22);
 G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7"]["Text"] = [[GhostSploit Thanks you for using their executor]];
+G2L["7"]["Text"] = [[GhostSploit Thanks you for using our executor]];
 G2L["7"]["Name"] = [[Msg]];
 G2L["7"]["BackgroundTransparency"] = 1;
 G2L["7"]["Position"] = UDim2.new(0.0032431413419544697, 0, 0.4282611310482025, 0);
